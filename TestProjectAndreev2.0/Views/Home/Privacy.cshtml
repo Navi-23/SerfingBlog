@@ -1,0 +1,33 @@
+﻿@using TestProjectAndreev2._0.Models
+
+@{
+    ViewData["Title"] = "Личная страница";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Это личная страница.</p>
+
+@foreach (Student student in @ViewBag.Group)
+{
+    <div class="panel panel-default">
+        <div class="panel-heading ">
+            Студент
+        </div>
+        <div class="panel-body">
+           Имя: @student.Name
+            <br>
+           Возраст: @student.Age
+            <br>
+            Пол:
+            @if (student.Gender == 1)
+            {
+                <p>Девушка</p>
+            }
+            else
+            {
+                <p>Парень</p>
+            }
+
+        </div>
+    </div>
+}

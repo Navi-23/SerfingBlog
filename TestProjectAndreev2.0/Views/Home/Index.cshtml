@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Моя первая страница";
+}
+
+<p>
+    Скоро мы будем писать блог для любителей серфинга
+
+</p>
+
+<hr />
+
+@ViewBag.Count
+<br />
+@ViewBag.Massage
+<br />
+@ViewBag.Date.ToString("dddd, dd MMMM yyyy")
+<hr />
+
+@foreach (string name in @ViewBag.Names)
+{
+<div class="panel panel-info tiny-panel">
+    <div class="panel-heading">
+        Имя
+    </div>
+    <div class="panel-body">
+        @name <img src="~/img/avatar.png"width="100"> 
+    </div>
+</div>
+    
+}
