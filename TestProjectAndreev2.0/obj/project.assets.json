@@ -5707,11 +5707,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Практика\\source\\repos\\TestProjectAndreev2.0\\TestProjectAndreev2.0\\TestProjectAndreev2.0.csproj",
+      "projectUniqueName": "D:\\Preces2021\\SerfingBlog\\TestProjectAndreev2.0\\TestProjectAndreev2.0.csproj",
       "projectName": "TestProjectAndreev2.0",
-      "projectPath": "C:\\Users\\Практика\\source\\repos\\TestProjectAndreev2.0\\TestProjectAndreev2.0\\TestProjectAndreev2.0.csproj",
+      "projectPath": "D:\\Preces2021\\SerfingBlog\\TestProjectAndreev2.0\\TestProjectAndreev2.0.csproj",
       "packagesPath": "C:\\Users\\Практика\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Практика\\source\\repos\\TestProjectAndreev2.0\\TestProjectAndreev2.0\\obj\\",
+      "outputPath": "D:\\Preces2021\\SerfingBlog\\TestProjectAndreev2.0\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Практика\\AppData\\Roaming\\NuGet\\NuGet.Config",
