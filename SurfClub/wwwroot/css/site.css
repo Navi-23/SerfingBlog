@@ -8,6 +8,42 @@ a.navbar-brand {
 }
 
 /* Provide sufficient contrast against white background */
+
+/*Подписи выше чем элементы ввода - все они отображаются в отдельной строке*/
+.input, label {
+    display: block;
+}
+
+.login-card{
+    width: 300px;
+    margin: 5px auto;
+}
+
+/*В заголовке - центирируем аватар и выйти по центру*/
+*.vcenter {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+/*Отсуп между постами*/
+.card {
+    margin-bottom: 10px !important;
+}
+
+/*Cсылки внизу - по центру*/
+.center {
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+}
+
+/*Содержимое сайта без отступов*/
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 a {
   color: #0366d6;
 }
@@ -77,3 +113,5 @@ body {
 .logobg {
     background-color: #c8d3d9;
 }
+
+

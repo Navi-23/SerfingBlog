@@ -12,7 +12,7 @@
 
 <form asp-controller="Login" asp-action="Login" asp-antiforgery="true">
 
-    <div class="card">
+    <div class="card login-card">
         <div class="card-header">Авторизация</div>
             <div class="card-body">
 
@@ -43,5 +43,6 @@
     </div>
 </form>
 
-
-Нет аккаунта? <a class="btn btn-info" asp-controller="Register" asp-action="Index">Зарегистрироваться</a>
+<div class="center">
+    Нет аккаунта? <a class="btn btn-info" asp-controller="Register" asp-action="Index">Зарегистрироваться</a>
+</div>

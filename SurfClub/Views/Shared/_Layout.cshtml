@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white mb-3">
             <div class="container logobg">
                 <a class="navbar-brand" asp-area="" asp-controller="Feed" asp-action="Index">
 
@@ -50,20 +50,27 @@
                     else
                     {
 
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav vcenter">
                             <li class="nav-item">
                                 @{
-                                    if (photo == null) {
-                                        
-                                    }
-                                    var userPhoto = ImageHelper.GetUrl(new Guid(photo));
 
-                                    if (userPhoto != null)
+                                    if (photo != "")
                                     {
 
-                                        <img class="userpic" src="@Url.Content(userPhoto)" width="40" />
+                                        var userPhoto = ImageHelper.GetUrl(new Guid(photo));
+
+                                        if (userPhoto != null)
+                                        {
+
+                                            <img class="userpic" src="@Url.Content(userPhoto)" width="40" />
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <img class="userpic" src="~/img/Uploads/avatarka.png" width="40" />
                                     }
                                 }
+
                             </li>
                             <li class="nav-item">
                                 @nickName
@@ -87,27 +94,6 @@
             @RenderBody()
         </main>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
