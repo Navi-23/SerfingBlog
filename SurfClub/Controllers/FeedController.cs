@@ -24,7 +24,7 @@ namespace SurfClub.Controllers
         {
             var posts = dbContext.Posts.
                 Include(c => c.Author).
-                OrderByDescending(c => c.PublishDate).
+                OrderBy(c => c.PublishDate).
                 ToArray();
             ViewBag.Posts = posts;
             return View();
@@ -37,7 +37,7 @@ namespace SurfClub.Controllers
             {
                 var posts1 = dbContext.Posts.
                 Include(c => c.Author).
-                OrderByDescending(c => c.PublishDate).
+                OrderBy(c => c.PublishDate).
                 ToArray();
                 ViewBag.Posts = posts1;
 
@@ -60,7 +60,7 @@ namespace SurfClub.Controllers
 
             var posts = dbContext.Posts.
                 Include(c => c.Author).
-                OrderByDescending(c => c.PublishDate).
+                OrderBy(c => c.PublishDate).
                 ToArray();
             ViewBag.Posts = posts;
 

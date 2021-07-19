@@ -21,7 +21,7 @@ namespace SurfClub.Models.dbModels
         public String Email { get; set; }
 
         [Required(ErrorMessage = "Пароль обязательный")]
-        [MaxLength(20), MinLength(3, ErrorMessage = "Минимимальная длина пароля 3 символа")]
+        [MaxLength(20), MinLength(6, ErrorMessage = "Минимимальная длина пароля 6 символа")]
         public String Password { get; set; }
 
         [NotMapped]
