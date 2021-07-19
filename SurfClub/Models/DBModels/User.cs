@@ -15,7 +15,8 @@ namespace SurfClub.Models.dbModels
         [MaxLength(20), MinLength(3, ErrorMessage = "Минимимальная длина псевдонима 3 символа")]
         public String Nickname { get; set; }
 
-        [MaxLength(31, ErrorMessage = "Максимальная длина пароля 31 символ")]
+        [Required(ErrorMessage = "E-mail обязательный")]
+        [MaxLength(31, ErrorMessage = "Максимальная длина e-mail 31 символ")]
         [EmailAddress(ErrorMessage ="Почта не шаблонного вида")]
         public String Email { get; set; }
 
